@@ -1,10 +1,10 @@
-# 🚗 EcoFleet — Sistema de Telemetria Veicular & Gestão de Frotas (Offline-First)
+# EcoFleet — Sistema de Telemetria Veicular & Gestão de Frotas (Offline-First)
 
 Projeto Full-Stack desenvolvido com **Python (FastAPI)**, **React (TypeScript)**, **PostgreSQL** e **Docker**, focado em telemetria veicular, detecção de anomalias em tempo real e **tolerância a falhas em cenários de conectividade reduzida (Offline-First)**.
 
 ---
 
-## 📌 Motivação & Alinhamento com o Edital
+## Motivação & Alinhamento com o Edital
 
 Este projeto foi desenhado sob medida para demonstrar proficiência nos requisitos de desenvolvimento do edital:
 1. **Telemetria Veicular:** Coleta, processamento georreferenciado (GPS), velocidade, rotação (RPM), temperatura de motor e nível de combustível.
@@ -15,7 +15,7 @@ Este projeto foi desenhado sob medida para demonstrar proficiência nos requisit
 
 ---
 
-## 🏗️ Arquitetura do Sistema
+## Arquitetura do Sistema
 
 ```mermaid
 graph TD
@@ -55,7 +55,7 @@ graph TD
 
 ---
 
-## 🔄 Fluxo de Tolerância a Quedas de Conexão (Offline-First)
+## Fluxo de Tolerância a Quedas de Conexão (Offline-First)
 
 Quando o veículo entra em uma zona de sombra (ex: túneis, rodovias remotas ou subsolos):
 
@@ -80,7 +80,7 @@ sequenceDiagram
 
 ---
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 Você pode rodar o projeto de forma rápida via **Docker Compose** ou em **Ambiente de Desenvolvimento Local**.
 
@@ -132,7 +132,7 @@ npm run dev
 
 ---
 
-## 📡 Principais Endpoints da API
+## Principais Endpoints da API
 
 | Método | Rota | Descrição |
 | :--- | :--- | :--- |
@@ -168,7 +168,7 @@ npm run dev
 
 ---
 
-## 🧪 Funcionalidades Demonstradas no Frontend
+## Funcionalidades Demonstradas no Frontend
 
 1. **Simulador de Conectividade:** Botão para alternar entre *Online (3G/4G)* e *Offline (Zona de Sombra)*.
 2. **Buffer Local:** Acúmulo de leituras em cache local enquanto offline.
@@ -178,6 +178,6 @@ npm run dev
 
 ---
 
-## 👥 Dados de Acesso (Seed)
+## Dados de Acesso (Seed)
 * **Usuário Padrão:** `gestor@ufrn.br`
 * **Senha:** `senha123`

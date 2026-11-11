@@ -194,11 +194,7 @@ export const App: React.FC = () => {
         onClose={() => setIsAlertsOpen(false)}
         onAlertResolved={loadFleetData}
       />
-
-      {/* Footer com Metadados do Edital */}
-      <footer className="bg-slate-900/60 border-t border-slate-800/80 px-4 py-3 text-center text-xs text-slate-500">
-        Desenvolvido para o Edital da UFRN — Vaga 5: Desenvolvedor Júnior Full-Stack (Telemetria Veicular & Offline-First)
-      </footer>
+      
     </div>
   );
 };
