@@ -26,7 +26,7 @@ services:
     container_name: ecofleet_backend
     restart: always
     environment:
-      DATABASE_URL: postgresql://postgres:postgrespassword@db:5432/telemetry_db
+      DATABASE_URL: postgresql+psycopg2://postgres:postgrespassword@db:5432/telemetry_db
       JWT_SECRET_KEY: super-secret-key-ufrn-telemetry-2026
       SPEED_LIMIT_KMH: 80.0
       MAX_ENGINE_TEMP_C: 102.0
