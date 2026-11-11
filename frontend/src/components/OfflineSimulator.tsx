@@ -27,26 +27,24 @@ export const OfflineSimulator: React.FC<OfflineSimulatorProps> = ({
 
   // Caminho circular simulado de alta precisão ao longo do asfalto do Anel Viário da UFRN
   const waypoints = [
-    { lat: -5.8360, lng: -35.2055, speed: 30.0, rpm: 1400 }, // Reitoria / Praça Cívica
-    { lat: -5.8364, lng: -35.2046, speed: 35.0, rpm: 1500 }, // Acesso Norte
-    { lat: -5.8368, lng: -35.2038, speed: 38.0, rpm: 1600 }, // Curva do Ginásio Poliesportivo
-    { lat: -5.8375, lng: -35.2032, speed: 40.0, rpm: 1650 }, // Pista de Atletismo
-    { lat: -5.8385, lng: -35.2028, speed: 42.0, rpm: 1700 }, // Anel Leste Norte
-    { lat: -5.8400, lng: -35.2024, speed: 45.0, rpm: 1800 }, // CCET / ECT
-    { lat: -5.8418, lng: -35.2023, speed: 48.0, rpm: 1900 }, // DECOM / DCA
-    { lat: -5.8438, lng: -35.2025, speed: 50.0, rpm: 2000 }, // Setor de Aulas IV
-    { lat: -5.8455, lng: -35.2030, speed: 48.0, rpm: 1950 }, // Anel Leste Sul
-    { lat: -5.8468, lng: -35.2040, speed: 44.0, rpm: 1800 }, // Curva Sul (Próximo ao IMD)
-    { lat: -5.8475, lng: -35.2052, speed: 40.0, rpm: 1700 }, // Rotatória Sul
-    { lat: -5.8476, lng: -35.2063, speed: 38.0, rpm: 1600 }, // Acesso RU / Centro de Biociências
-    { lat: -5.8470, lng: -35.2072, speed: 40.0, rpm: 1650 }, // Curva Sudoeste
-    { lat: -5.8458, lng: -35.2077, speed: 45.0, rpm: 1800 }, // Anel Oeste Sul
-    { lat: -5.8440, lng: -35.2078, speed: 52.0, rpm: 2100 }, // CCHLA
-    { lat: -5.8420, lng: -35.2077, speed: 84.0, rpm: 2900 }, // Reta CCHLA/BCZM (Gera Alerta de Velocidade)
-    { lat: -5.8402, lng: -35.2073, speed: 50.0, rpm: 2050 }, // Setor de Aulas II
-    { lat: -5.8388, lng: -35.2066, speed: 42.0, rpm: 1750 }, // Setor de Aulas I
-    { lat: -5.8376, lng: -35.2060, speed: 36.0, rpm: 1550 }, // Aproximação da Reitoria
-    { lat: -5.8360, lng: -35.2055, speed: 30.0, rpm: 1400 }, // Fechamento do Anel Viário
+    { lat: -5.8378, lng: -35.2053, speed: 30.0, rpm: 1400 }, // Rotatória Reitoria / Praça Cívica
+    { lat: -5.8390, lng: -35.2050, speed: 38.0, rpm: 1600 }, // Anel Viário descendo em frente ao CCHLA
+    { lat: -5.8405, lng: -35.2043, speed: 42.0, rpm: 1750 }, // Setor de Aulas II
+    { lat: -5.8420, lng: -35.2034, speed: 46.0, rpm: 1900 }, // Acesso Biblioteca Central / RU
+    { lat: -5.8429, lng: -35.2028, speed: 40.0, rpm: 1650 }, // Rotatória Sul / Centro de Biociências
+    { lat: -5.8433, lng: -35.2015, speed: 45.0, rpm: 1800 }, // Anel Viário Sul (Setor de Aulas IV)
+    { lat: -5.8437, lng: -35.1995, speed: 48.0, rpm: 1900 }, // Anel Sul (Área Tecnológica / ECT)
+    { lat: -5.8441, lng: -35.1970, speed: 50.0, rpm: 2000 }, // Curva Sudeste do Anel Viário
+    { lat: -5.8425, lng: -35.1953, speed: 52.0, rpm: 2050 }, // Anel Viário Leste (Reta)
+    { lat: -5.8405, lng: -35.1951, speed: 84.0, rpm: 2900 }, // Reta Anel Leste (Alerta de Velocidade 84 km/h)
+    { lat: -5.8385, lng: -35.1962, speed: 50.0, rpm: 2000 }, // Anel Leste aproximando do Ginásio Poliesportivo
+    { lat: -5.8368, lng: -35.1975, speed: 42.0, rpm: 1750 }, // Curva da Pista de Atletismo
+    { lat: -5.8350, lng: -35.1998, speed: 38.0, rpm: 1600 }, // Anel Viário Norte (Parque Tecnológico / Bosque)
+    { lat: -5.8335, lng: -35.2020, speed: 35.0, rpm: 1500 }, // Proximidades do IMD
+    { lat: -5.8325, lng: -35.2036, speed: 32.0, rpm: 1450 }, // Curva Norte (Acesso Solon de Miranda Galvão)
+    { lat: -5.8340, lng: -35.2052, speed: 35.0, rpm: 1500 }, // Sentido Reitoria
+    { lat: -5.8360, lng: -35.2057, speed: 32.0, rpm: 1450 }, // Chegada à Praça Cívica
+    { lat: -5.8378, lng: -35.2053, speed: 30.0, rpm: 1400 }, // Retorno à Rotatória da Reitoria (Loop Fechado)
   ];
 
   const generateNextPoint = async () => {
