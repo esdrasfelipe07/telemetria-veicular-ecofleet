@@ -4,9 +4,8 @@ Projeto Full-Stack desenvolvido com **Python (FastAPI)**, **React (TypeScript)**
 
 ---
 
-## Motivação & Alinhamento com o Edital
+## Motivação
 
-Este projeto foi desenhado sob medida para demonstrar proficiência nos requisitos de desenvolvimento do edital:
 1. **Telemetria Veicular:** Coleta, processamento georreferenciado (GPS), velocidade, rotação (RPM), temperatura de motor e nível de combustível.
 2. **Conectividade Reduzida (Offline-First):** Estratégia de enfileiramento local no dispositivo/cliente (buffer local) quando não há sinal de dados (3G/4G) e sincronização em lote (`POST /api/v1/telemetry/batch`) com preservação do timestamp original de captura ao restaurar conexão.
 3. **Backend com Python (FastAPI):** APIs RESTful com validação estrita (Pydantic v2), ORM (SQLAlchemy), autenticação segura (JWT) e documentação OpenAPI/Swagger automática.
